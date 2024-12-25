@@ -7,6 +7,7 @@ import About from "./components/About";
 import Contact from "./components/Contact";
 import { jokeContext } from "./context/jokeContext";
 import fetchApi from "./Service/fetchApi";
+import ProductDetailPage from "./components/pages/ProductDetailPage";
 
 function App() {
   const [data, setdate] = useState(null);
@@ -30,6 +31,7 @@ function App() {
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/:id" element={<ProductDetailPage />} />
           <Route path="/service" element={<Services />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />

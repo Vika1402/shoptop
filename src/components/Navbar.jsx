@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 function Navbar() {
   return (
-    <div className="navbar bg-base-100">
+    <div className="navbar bg-base-100 bg-white text-black">
       <div className="navbar-start">
         <div className="dropdown">
           <div
@@ -45,8 +45,8 @@ function Navbar() {
         </div>
       </div>
       <div className="navbar-center">
-        <Link to={"/"} className="btn btn-ghost text-xl">
-          daisyUI
+        <Link to={"/"} className="btn btn-ghost text-xl tracking-widest">
+          SHOPTOP
         </Link>
       </div>
       <ul className="space-x-6 navbar-end mr-6 hidden md:flex text-xl">
