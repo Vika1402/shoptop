@@ -4,7 +4,11 @@ import Home from './Home'
 function Contenet() {
   return (
   <>
-   
+   <img
+        className="w-full h-full"
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCdy0oRxVrAGT0xiAFg-K5XLcV1B3Zx2aXqw&s"
+        alt=""
+      />
   </>
   )
 }

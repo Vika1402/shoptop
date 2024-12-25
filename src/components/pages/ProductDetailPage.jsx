@@ -27,7 +27,7 @@ function ProductDetailPage() {
     <>
       {data && (
         <div className="mt-10 flex m-10">
-          <div className="card card-side shadow-md flex-col md:flex-row items-center">
+          <div className="card card-side shadow-sm flex-col md:flex-row items-center">
             <figure className="w-[60%] lg:w-[70%]">
               <img src={data?.image} alt={data.title} />
             </figure>
@@ -51,7 +51,7 @@ function ProductDetailPage() {
               <p className="w-[50%] mt-10">{data?.description}</p>
 
               <p className="text-2xl font-bold text-blue-500">
-                Rs. {data.price}
+                Rs. {Math.floor(data.price * 67)}
               </p>
               <div className="card-actions justify-end">
                 <button className="btn btn-primary">Buy Now</button>

@@ -36,7 +36,7 @@ function Navbar() {
               <Link to={"/"}>Home</Link>
             </li>
             <li>
-              <Link to={"/service"}>Services</Link>
+            <Link to={"/categories"}>Categories</Link>
             </li>
             <li>
               <Link to={"/contact"}>Contact</Link>
@@ -51,7 +51,7 @@ function Navbar() {
       </div>
       <ul className="space-x-6 navbar-end mr-6 hidden md:flex text-xl">
             <Link to={"/"}>Home</Link>
-            <Link to={"/service"}>Services</Link>
+            <Link to={"/categories"}>Categories</Link>
             <Link to={"/contact"}>Contact</Link>
             <Link to={"/about"}>About</Link>
           </ul>

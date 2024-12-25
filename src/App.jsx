@@ -8,6 +8,8 @@ import Contact from "./components/Contact";
 import { jokeContext } from "./context/jokeContext";
 import fetchApi from "./Service/fetchApi";
 import ProductDetailPage from "./components/pages/ProductDetailPage";
+import ProductCategories from "./components/pages/ProductCategories";
+import ProductCategoriesDetails from "./components/pages/ProductCategoriesDetails";
 
 function App() {
   const [data, setdate] = useState(null);
@@ -35,6 +37,11 @@ function App() {
           <Route path="/service" element={<Services />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/categories" element={<ProductCategories />} />
+          <Route
+            path="/categories/:id"
+            element={<ProductCategoriesDetails />}
+          />
         </Routes>
       </jokeContext.Provider>
     </>
